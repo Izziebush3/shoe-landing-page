@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #d5bdaf;
+    color: #344e41;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #588157;
+    height: 70px;
+    width: 100%;
+    z-index: 1100;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 2;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #d6ccc2;
+    width: 200px;
+    flex: 1;
+}
+
+#shop-icon {
+    width: 40px;
+    height: fit-content;
+}
+
+#shop-icon:hover {
+    background-color: #d5bdaf;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+header .nav-link:hover {
+    cursor: pointer;
+    background-color: #d5bdaf;
+    width: 40px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #344e41;
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #222;
+    padding: 1rem;
+    display: none;
+    flex-direction: column;
+    min-width: 150px;
+    border-radius: 0.5rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+main {
+    position: relative;
+    top: 50px;
+}
+
+.main-section {
+    margin-bottom: 70px;
+}
+
+#home {
+    background-image: url('street2.jpg');
+    background-size: cover;
+    /* Make image cover entire section */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* Takes up full screen height */
+    position: relative;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+.home-text {
+    z-index: 20;
+}
+
+h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+#home p {
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+#home button {
+    width: 250px;
+    background-color: #d6ccc2;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+#home button:hover {
+    cursor: pointer;
+    background-color: #588157;
+    color: #d6ccc2;
+}
+
+#about {
+    border-bottom: 10px solid #588157;
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#about h2 {
+    padding-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#about .about-content img {
+    width: 400px;
+    height: fit-content;
+    border-radius: 30px;
+    border-right: 5px solid #588157;
+}
+
+#about .about-content #about-text {
+    width: 400px;
+    line-height: 40px;
+}
+
+#services {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 10px solid #588157;
+    padding: 30px;
+}
+
+#services img {
+    width: 300px;
+    height: fit-content;
+    border-radius: 40px;
+    padding-bottom: 20px;
+}
+
+#product-1,
+#product-2,
+#product-3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    border: 2px solid #588157;
+    border-radius: 30px;
+    width: 320px;
+    height: 380px;
+    justify-content: center;
+    padding: 5px 0 10px 8px;
+}
+
+#services p {
+    text-align: center;
+}
+
+.reviews-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#reviews h2 {
+    padding-bottom: 20px;
+}
+
+.reviews-content div {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    border: 2px solid #588157;
+    border-radius: 30px;
+    width: 200px;
+    height: 280px;
+    justify-content: center;
+    padding: 5px 0 10px 8px;
+    background-color: #a3b18a;
+
+}
+
+.review-text {
+    padding-bottom: 20px;
+}
+
+.reviews-content .name {
+    text-align: center;
+    font-size: 20px;
+}
+
+#contact-info h2 {
+    padding-bottom: 20px;
+}
+
+.contact-info {
+    border: 4px solid #344e41;
+    background-color: #588157;
+    width: 450px;
+    height: 400px;
+    padding: 50px;
+    border-radius: 50px;
+    margin-left: 400px;
+
+}
+
+.contact-info label {
+    display: block;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.contact-info input {
+    display: block;
+    background-color: #d5bdaf;
+    width: 350px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.contact-info button {
+    width: 250px;
+    background-color: #d6ccc2;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.contact-info button:hover {
+    cursor: pointer;
+    background-color: #588157;
+    color: #d6ccc2;
+    border: 3px solid #d6ccc2;
+    border-radius: 30px;
+}
+
+footer {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #588157;
+    height: 70px;
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #d6ccc2;
+    width: 200px;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer img {
+    width: 40px;
+    height: fit-content;
+}
+
+footer .icon-phone {
+    width: 60px;
+    height: fit-content;
+}

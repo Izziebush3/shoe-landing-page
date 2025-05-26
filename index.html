@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Shoes store</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="landingpage.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">Shoes Store</div>
+            <nav>
+                <ul class="menu">
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#services">Services</a>
+                        <ul class="dropdown">
+                         <li><a href="#product-1">Casual & Fashion Shoes</a></li>
+                         <li><a href="#product-2">Formal & Dress Shoes</a></li>
+                         <li><a href="#product-3">Sneakers & Athletic Shoes</a></li>
+                         </ul></li>
+                </ul>
+                <a class="shop-icon" href="#services"><img id="shop-icon" src="cart-icon-28344.png"></a>
+            </nav>
+        </header>
+        <main>
+            <section class="main-section" id="home">
+                <div class="home-text">
+                    <h1 id="main-text">Step Into Style!</h1>
+                    <p id="subtext">Home of Comfort, Durability and Style.</p>
+                    <button>Shop Now!</button>
+                </div>
+            </section> 
+            
+            <section class="main-section" id="about">
+                <h2>About Us</h2>
+                <div class="about-content">
+                 <img src="street3.jpg">
+                 <p id="about-text">At Shoes store, we believe in quality and authenticity. Every pair is carefully selected to ensure you get the best. We're passionate about helping you find the perfect fit, no matter where you are in the country!
+Our commitment to affordability means you can enjoy stylish, high-quality shoes without breaking the bank. Join our community of happy customers and step into your new favorite pair today! </p>
+                </div>
+           </section>
+
+            <section class="main-section" id="services">
+                <!--add images of shoes-->
+                <div id="product-1">
+                    <img src="street4.jpg">
+                    <p>Sneakers & Athletic Shoes</p>
+                </div>
+                <div id="product-2">
+                    <img src="street3.jpg">
+                    <p> Formal & Dress Shoes</p>
+                </div>
+                <div id="product-3">
+                    <img src="street5.jpg">
+                    <p>Casual & Fashion Shoes</p>
+                </div>
+            </section>
+
+            <section class="main-section" id="reviews">
+                <h2>Testimony</h2>
+               <div class="reviews-content">
+                 <div>
+                    <!--give the name a different color and maybe italics?-->
+                    <p class="review-text">The shoes I ordered are perfect! Great quality and arrived quickly. I'll definitely be back for more!</p>
+                    <p class="name">Nnamdi</p>
+                 </div>
+
+                 <div>
+                    <p class="review-text">Absolutely love my new sneakers! They fit like a dream and look fantastic. Best shopping experience ever!</p>
+                    <p class="name">Halima</p>
+                 </div>
+
+                 <div>
+                    <p class="review-text">I was amazed by the prices! The shoes are stylish and comfy. Fast shipping too! Highly recommend this store!</p>
+                    <p class="name">Shola</p>
+                 </div>
+                </div>
+            </section>
+
+            <section class="main-section" id="contact-info">
+                <h2>Don't Miss Amazing Offers!</h2>
+                <form class="contact-info" method="post" action="">
+                   <label>Name: <input type="text" required placeholder="John Doe"></label>
+                   <label>Email-Address: <input type="email" required placeholder="abc@gmail.com"></label>
+                   <label>Phone Number: <input type="number" required placeholder="+234"></label>
+                   <button>Sign Up!</button>
+                </form>
+                <!--edit button-->
+                
+            </section>
+        </main>
+        <footer>
+            <div class="logo">Shoes Store</div>
+            <div>
+                © 2025 Wisdom Ohia. All rights reserved.
+            </div>
+            <div class="footer-icon">
+                <!--i'd like to do a dropdown in the phone icon so, a number shows on hover-->
+                <img class="icon-phone" src="contact-icon-png-4066.png">
+                <img class="icon" src="insta-icon.png">
+            </div>
+        </footer>
+    </body>
+</html>
